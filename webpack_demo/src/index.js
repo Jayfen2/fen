@@ -2,7 +2,7 @@ import './styles/test.css'
 import './styles/test.less'
 
 import img from './images/3.jpeg'
-import img1 from '/img/5.[hash:8].png';
+import img1 from 'dist/5.[hash:8].png';
 
 const instimg = (img) => {
     const imgs = document.createElement('img')

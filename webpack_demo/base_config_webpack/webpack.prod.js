@@ -24,7 +24,7 @@ module.exports = smart(webpackCommonConf, {
                 use: {
                     loader: 'file-loader',
                     options: {
-                        outputPath: '/img/',
+                        outputPath: 'dist/',
                         esModule: false,
                         name: '[name].[hash:8].[ext]'
                     },
@@ -34,6 +34,6 @@ module.exports = smart(webpackCommonConf, {
         ]
     },
     output: {
-        publicPath: '/img/'
-    },
+        publicPath: 'dist/' 
+      }
 })
