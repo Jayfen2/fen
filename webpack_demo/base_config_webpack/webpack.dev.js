@@ -1,5 +1,5 @@
 // 线下开发 webpack 配置
-const webpackCommonConf = require("./webpack.common.js")
+const webpackCommonConf = require("./webpack.config.js")
 const {smart} = require("webpack-merge")
   
 const path = require("path") // 引入文件路径

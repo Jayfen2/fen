@@ -1,5 +1,5 @@
 // 线上开发 webpack 配置
-const webpackCommonConf = require("./webpack.common.js")
+const webpackCommonConf = require("./webpack.config.js")
 const { smart } = require("webpack-merge")
 
 module.exports = smart(webpackCommonConf, {
@@ -26,7 +26,7 @@ module.exports = smart(webpackCommonConf, {
                     options: {
                         outputPath: 'dist/',
                         esModule: false,
-                        name: '[path][5].[hash:8].[ext]',
+                        name: '[path][name].[hash:8].[ext]',
                     },
 
                 },
@@ -34,6 +34,6 @@ module.exports = smart(webpackCommonConf, {
         ]
     },
     output: {
-        publicPath: 'dist/' 
+        // publicPath: 'dist/' 
       }
 })

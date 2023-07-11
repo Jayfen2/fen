@@ -45,6 +45,5 @@ module.exports = {
         progress:true, // 显示打包进度条
         open:true, // 自动打开浏览器
         contentBase: devpath,
-        publicPath:'/'
     }
 }

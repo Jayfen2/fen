@@ -2,7 +2,7 @@ import './styles/test.css'
 import './styles/test.less'
 
 // import img from 'dist/3.[hash:5].jpeg'
-import img1 from '/dist/img1.[hash:8].png';
+import img from '/dist/img5.[hash:8].png';
 
 const instimg = (img) => {
     const imgs = document.createElement('img')
@@ -10,7 +10,7 @@ const instimg = (img) => {
     document.body.appendChild(imgs)
 }
 // instimg(img)
-instimg(img1)
+instimg(img)
 
 // es6
 const demo = () => {
