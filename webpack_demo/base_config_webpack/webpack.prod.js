@@ -13,7 +13,7 @@ module.exports = smart(webpackCommonConf, {
                     loader: "url-loader",
                     options: {
                         limit: 5 * 1024,
-                        outputPath: '/img/',
+                        outputPath: 'dist/',
                         esModule: false
                     }
                 },
@@ -26,7 +26,7 @@ module.exports = smart(webpackCommonConf, {
                     options: {
                         outputPath: 'dist/',
                         esModule: false,
-                        name: '[name].[hash:8].[ext]'
+                        name: '[path][5].[hash:8].[ext]',
                     },
 
                 },

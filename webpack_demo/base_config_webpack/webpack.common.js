@@ -9,6 +9,7 @@ module.exports = {
     output:{
         filename:"app.js", // 打包文件名
         path:disPath,
+        publicPath:"/dist/"
     },
     module:{
         rules:[
@@ -43,6 +44,7 @@ module.exports = {
         port:8000,
         progress:true, // 显示打包进度条
         open:true, // 自动打开浏览器
-        contentBase: devpath
+        contentBase: devpath,
+        publicPath:'/'
     }
 }

@@ -12,7 +12,7 @@ module.exports = smart(webpackCommonConf,{
           {
             test: /\.(jpg|jpeg|gif|png)$/,
             loader: "file-loader",
-            outputPath: '/img/',
+            outputPath: '/dist/',
           }
         ]
       },
